@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Quiz</h1>
+
+    <form id="quiz" name="quiz">
+        
+        <p>How to write an IF statement in JavaScript?</p>
+
+            <input type="radio" class="awenser" name="question1" value="good"><span class="correct">if (i == 5)</span><br>
+            <input type="radio" class="awenser" name="question1" value="bad">if i == 5 then
+
+        <p class="questions">How does a WHILE loop start?</p>
+
+            <input type="radio" class="awenser" name="question2" value="bad"><span class="correct">while i = 1 to 10</span><br>
+            <input type="radio" class="awenser good" name="question2" value="good">while (i <= 10)
+        
+        <p class="questions">How can you add a comment in a JavaScript?</p>
+        
+            <input type="radio" class="awenser" name="question3" value="bad"><span class="correct">'This is a comment</span><br>
+            <input type="radio" class="awenser" name="question3" value="good">//This is a comment<br>
+        
+
+            <input id="button" type="button" value="Check" onclick="check();">
+
+    </form>
+
+    <div id="submit">
+        <p id="number-correct"></p>
+        <p id="message"></p>
+</div>
+</body>
+</html>
